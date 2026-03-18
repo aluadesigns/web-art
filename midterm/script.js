@@ -12,10 +12,10 @@ function init() {
     if (document.getElementById("home")) {
         alert("click to start the video and turn your volume up!"); 
     }
-
-    else {
+    else if (document.getElementById("newpage")) {
         alert("hello!"); 
     }
+
     let thebody = document.body;
     thebody.addEventListener('click', clickCalled);
 
