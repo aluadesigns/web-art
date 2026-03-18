@@ -9,7 +9,13 @@ let appear = true;
 window.addEventListener('load', init);
 
 function init() {
-    alert("click to start the video and turn your volume up!"); 
+    if (document.getElementById("home")) {
+        alert("click to start the video and turn your volume up!"); 
+    }
+
+    else {
+        alert("hello!"); 
+    }
     let thebody = document.body;
     thebody.addEventListener('click', clickCalled);
 
