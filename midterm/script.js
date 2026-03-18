@@ -9,10 +9,10 @@ let appear = true;
 window.addEventListener('load', init);
 
 function init() {
-    if (document.getElementById("home")) {
+    if (document.body.id === "home") {
         alert("click to start the video and turn your volume up!"); 
     }
-    else if (document.getElementById("newpage")) {
+    else if (document.body.id === "newpage") {
         alert("hello!"); 
     }
 
