@@ -1,0 +1,603 @@
+* {
+    cursor: none;
+}
+
+body {
+    background-color: rgb(181, 184, 172);
+    transition: background-color 0.5s ease;
+    margin: 0;
+     /* overflow: hidden; */
+    min-height: 250vh;
+}
+
+#cursor{
+    width: 1.5px;
+    height: 1.5px;
+    background-color: black;
+    position: fixed;
+    pointer-events: none;
+}
+
+/* first section */
+
+#first{
+    position: fixed;
+    width: 100vw;
+    height: 100wh;
+    overflow: hidden;
+}
+
+
+.marquee{
+    /* overflow: hidden; */
+    width: 100vw;
+    position: fixed;
+    transform-origin: center center;
+}
+
+/* zones */
+
+.zones{
+    white-space: nowrap;
+    display: inline-block;
+    animation: scroll linear infinite;
+}
+
+.marquee:nth-child(1)  { top: 0vh; }
+.marquee:nth-child(2)  { top: 8vh; }
+.marquee:nth-child(3)  { top: 16vh; }
+.marquee:nth-child(4)  { top: 24vh; }
+.marquee:nth-child(5)  { top: 32vh; }
+.marquee:nth-child(6)  { top: 40vh; }
+.marquee:nth-child(7)  { top: 48vh; }
+.marquee:nth-child(8)  { top: 56vh; }
+.marquee:nth-child(9)  { top: 64vh; }
+.marquee:nth-child(10) { top: 72vh; }
+.marquee:nth-child(11) { top: 80vh; }
+.marquee:nth-child(12) { top: 88vh; }
+
+
+#z-one{
+    animation-duration: 0.1s;
+}
+
+#z-two{
+    animation-duration: 1s;
+}
+
+#z-three{
+    animation-duration: 5s;
+    animation-direction: reverse;
+}
+
+#z-four{
+    animation-duration: 0.1s;
+
+}
+
+#z-five{
+    animation-duration: 0.03s;
+    animation-direction: reverse;
+
+}
+
+#z-six{
+    animation-duration: 0.01s;
+    animation-direction: reverse;
+}
+
+#z-seven{
+    animation-duration: 0.05s;
+    animation-direction: reverse;
+
+}
+
+#z-eight{
+    animation-duration: 0.1s;
+}
+
+#z-nine{
+    animation-duration: 0.5s;
+}
+
+#z-ten{
+    animation-duration: 1s;
+}
+
+#z-eleven{
+    animation-duration: 5s;
+    animation-direction: reverse;
+}
+
+#z-twelve{
+    animation-duration: 5s;
+}
+
+/* belts */
+.belts{
+    white-space: nowrap;
+    display: inline-block;
+    animation: scroll linear infinite;
+    text-shadow: 0px -3px 10px rgba(255, 255, 255, 0.27);
+    color: rgba(255, 255, 255, 0);
+    font-size: 7vh;
+}
+
+.marquee:nth-child(13)  { top: 0vh; }
+.marquee:nth-child(14)  { top: 8vh; }
+.marquee:nth-child(15)  { top: 16vh; }
+.marquee:nth-child(16)  { top: 24vh; }
+.marquee:nth-child(17)  { top: 32vh; }
+.marquee:nth-child(18)  { top: 40vh; }
+.marquee:nth-child(19)  { top: 48vh; }
+.marquee:nth-child(20)  { top: 56vh; }
+.marquee:nth-child(21)  { top: 64vh; }
+.marquee:nth-child(22) { top: 72vh; }
+.marquee:nth-child(23) { top: 80vh; }
+.marquee:nth-child(24) { top: 88vh; }
+
+#b-one{
+    animation-duration: 0.5s;
+}
+
+#b-two{
+    animation-duration: 1s;
+}
+
+#b-three{
+    animation-duration: 5s;
+    animation-direction: reverse;
+}
+
+#b-four{
+    animation-duration: 3s;
+
+}
+
+#b-five{
+    animation-duration: 2.5s;
+    animation-direction: reverse;
+
+}
+
+#b-six{
+    animation-duration: 1s;
+    animation-direction: reverse;
+}
+
+#b-seven{
+    animation-duration: 1.5s;
+    animation-direction: reverse;
+
+}
+
+#b-eight{
+    animation-duration: 1.5s;
+}
+
+#b-nine{
+    animation-duration: 3s;
+}
+
+#b-ten{
+    animation-duration: 1s;
+}
+
+#b-eleven{
+    animation-duration: 5s;
+    animation-direction: reverse;
+}
+
+#b-twelve{
+    animation-duration: 5s;
+}
+
+
+
+@keyframes scroll {
+    from {
+        transform: translateX(100vw);
+    }
+
+    to {
+        transform: translate(-100vw);
+    }
+}
+
+/* all storms */
+
+.storm-box{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    z-index: 1000;
+}
+
+/* storm 1 */
+
+#sb1{
+    top: 10vh;
+    left: 10vh;
+}
+
+.storm-1{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.storm-1:nth-child(1){
+    color: aqua;
+    font-size: 20px;
+    font-family: monospace;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+.storm-1:nth-child(2){
+    color: rgb(0, 38, 255);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+}
+
+.storm-1:nth-child(3){
+    color: black;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* storm 2 */
+
+#sb2{
+    top: 20vh;
+    left: 20vw;
+}
+
+.storm-2{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+.storm-2:nth-child(1){
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: monospace;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+.storm-2:nth-child(2){
+    color: rgb(0, 38, 255);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+}
+
+.storm-2:nth-child(3){
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* storm 3 */
+
+#sb3{
+    top: 10vh;
+    left: 80vw;
+}
+
+.storm-3{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.storm-3:nth-child(1){
+    color: aqua;
+    font-size: 20px;
+    font-family: monospace;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+.storm-3:nth-child(2){
+    color: rgb(0, 38, 255);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+}
+
+.storm-3:nth-child(3){
+    color: black;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* storm 4 */
+
+#sb4{
+    top: 50vh;
+    left: 20vw;
+}
+
+.storm-4{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.storm-4:nth-child(1){
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: monospace;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+.storm-4:nth-child(2){
+    color: rgb(0, 38, 255);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+}
+
+.storm-4:nth-child(3){
+    color: black;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* storm 5 */
+
+#sb5{
+    top: 80vh;
+    left: 70vw;
+}
+
+.storm-5{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.storm-5:nth-child(1){
+    color: rgb(0, 38, 255);
+    font-size: 20px;
+    font-family: monospace;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+.storm-5:nth-child(2){
+    color: aqua;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+}
+
+.storm-5:nth-child(3){
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*  poem styling */
+
+.poem{
+    position: fixed;
+    background-color: white;
+    padding: 30px;
+    white-space: pre-line;
+    width: 95vw;
+    height: 98vh;
+    z-index: 10000;
+    box-shadow: 0 0 15px 5px white;
+    pointer-events: none;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    transition: opacity 0.5s ease-in;
+}
+
+#text{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    pointer-events: none;
+    z-index: 10000;
+}
+
+
+/* storm 2 */
+
+#sb2{
+    top: 20vh;
+    left: 20vw;
+}
+
+.storm-2{
+    position: fixed;
+    top: 20vh;
+    left: 30vw;
+    width: 50px;
+    height: 50px;
+}
+
+#s2s1{
+    color: aqua;
+    font-size: 20px;
+    font-family: monospace;
+    text-align: center;
+    letter-spacing: 10;
+}
+
+
+#s2s2{
+    color: rgb(0, 38, 255);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+}
+
+#s2s3{
+    color: black;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+
+/* second section */
+
+#second{
+    position: fixed;
+    top: 0vh;
+    width: 100vw;
+    overflow: hidden;
+    height: 100vh;
+    color: rgb(158, 156, 156);
+    background-color: rgb(144, 147, 136);
+
+}
+
+.waves{
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 50px;
+    z-index: -10;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: ease-in;
+}
+
+.waves:hover {
+    font-size: 100px;
+    color: rgb(117, 255, 232);
+    white-space: nowrap;
+    text-align: center;
+}
+
+
+#wave-1{
+    text-align: center;
+}
+
+#statista{
+    position: fixed;
+    bottom: 1vh;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    text-align: center;
+}
+
+
+/* third section */
+
+#third{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.name{
+    color: black;
+    font-size: 20px;
+    position: fixed;
+    z-index: 2;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#light {
+    position: fixed;
+    width: 1px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.342);
+    border-radius: 10px;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 20px 10px white;
+}
+
+.info{
+    position: fixed;
+    background-color: rgb(163, 163, 163);
+    white-space: pre-line;
+    width: 20vw;
+    height: fit-content;
+    padding: 10px;
+    z-index: 10;
+    box-shadow: 0 0 15px 5px white;
+    pointer-events: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease-in;
+    opacity: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#source{
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    bottom: 5vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color: black;
+    z-index: 10;
+    font-size: 20px;
+
+}
+
+#source:hover{
+    color: blue;
+}
+
+#header{
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    top: 5vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    z-index: 10;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+/* name positions */
+
+#name-1{
+    top: 10vh;
+    left: 10vw; 
+}
+
+#name-2{
+    top: 70vh;
+    left: 10vw; 
+}
+
+#name-3{
+    top: 20vh;
+    left: 80vw; 
+}
+
+#name-4{
+    top: 25vh;
+    left: 50vw; 
+}
+
+#name-5{
+    top: 40vh;
+    left: 80vw; 
+}
+
+#name-6{
+    top: 80vh;
+    left: 60vw; 
+}
